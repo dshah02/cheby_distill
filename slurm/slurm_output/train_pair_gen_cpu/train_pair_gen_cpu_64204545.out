@@ -1,0 +1,7 @@
+ERROR: Unable to locate a modulefile for 'cudatoolkit/12.4'
+[2025-05-10 16:01:41] Python version: Python 3.12.7
+PyTorch version: 2.5.1
+CUDA available: False
+CUDA version: 12.4
+[2025-05-10 16:01:49] CUDA not installed or GPUs not available.
+[2025-05-10 16:01:49] Running iteration 1 of 10000

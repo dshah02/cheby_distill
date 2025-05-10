@@ -1,0 +1,47 @@
+ERROR: Unable to locate a modulefile for 'cudatoolkit/12.4'
+[2025-05-10 14:25:12] Python version: Python 3.12.7
+PyTorch version: 2.5.1
+CUDA available: False
+CUDA version: 12.4
+[2025-05-10 14:25:20] CUDA not installed or GPUs not available.
+[2025-05-10 14:25:20] Running iteration 1 of 10000
+[2025-05-10 14:25:29] Running iteration 2 of 10000
+[2025-05-10 14:25:32] Running iteration 3 of 10000
+[2025-05-10 14:25:36] Running iteration 4 of 10000
+[2025-05-10 14:25:39] Running iteration 5 of 10000
+[2025-05-10 14:25:43] Running iteration 6 of 10000
+[2025-05-10 14:25:46] Running iteration 7 of 10000
+[2025-05-10 14:25:49] Running iteration 8 of 10000
+[2025-05-10 14:25:53] Running iteration 9 of 10000
+[2025-05-10 14:25:56] Running iteration 10 of 10000
+[2025-05-10 14:26:00] Running iteration 11 of 10000
+[2025-05-10 14:26:03] Running iteration 12 of 10000
+[2025-05-10 14:26:06] Running iteration 13 of 10000
+[2025-05-10 14:26:10] Running iteration 14 of 10000
+[2025-05-10 14:26:13] Running iteration 15 of 10000
+[2025-05-10 14:26:17] Running iteration 16 of 10000
+[2025-05-10 14:26:20] Running iteration 17 of 10000
+[2025-05-10 14:26:24] Running iteration 18 of 10000
+[2025-05-10 14:26:27] Running iteration 19 of 10000
+[2025-05-10 14:26:30] Running iteration 20 of 10000
+[2025-05-10 14:26:34] Running iteration 21 of 10000
+[2025-05-10 14:26:37] Running iteration 22 of 10000
+[2025-05-10 14:26:41] Running iteration 23 of 10000
+[2025-05-10 14:26:44] Running iteration 24 of 10000
+[2025-05-10 14:26:47] Running iteration 25 of 10000
+[2025-05-10 14:26:51] Running iteration 26 of 10000
+[2025-05-10 14:26:54] Running iteration 27 of 10000
+[2025-05-10 14:26:58] Running iteration 28 of 10000
+[2025-05-10 14:27:01] Running iteration 29 of 10000
+[2025-05-10 14:27:05] Running iteration 30 of 10000
+[2025-05-10 14:27:08] Running iteration 31 of 10000
+[2025-05-10 14:27:11] Running iteration 32 of 10000
+[2025-05-10 14:27:15] Running iteration 33 of 10000
+[2025-05-10 14:27:18] Running iteration 34 of 10000
+[2025-05-10 14:27:22] Running iteration 35 of 10000
+[2025-05-10 14:27:25] Running iteration 36 of 10000
+[2025-05-10 14:27:29] Running iteration 37 of 10000
+[2025-05-10 14:27:32] Running iteration 38 of 10000
+[2025-05-10 14:27:35] Running iteration 39 of 10000
+[2025-05-10 14:27:39] Running iteration 40 of 10000
+[2025-05-10 14:27:42] Running iteration 41 of 10000

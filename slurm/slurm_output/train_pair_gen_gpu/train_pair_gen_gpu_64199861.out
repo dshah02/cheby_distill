@@ -1,0 +1,6 @@
+[2025-05-10 15:48:48] Python version: Python 3.12.7
+PyTorch version: 2.5.1
+CUDA available: True
+CUDA version: 12.4
+[2025-05-10 15:48:54] GPU Information: NVIDIA A100 80GB PCIe
+[2025-05-10 15:48:54] Running iteration 1 of 10000

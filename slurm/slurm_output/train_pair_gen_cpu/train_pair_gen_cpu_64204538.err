@@ -1,0 +1,169 @@
+/home/ds6237/.conda/envs/torch-env/lib/python3.12/site-packages/torch/cuda/__init__.py:716: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+Traceback (most recent call last):
+  File "/home/ds6237/cheby_test/train_gen_stu.py", line 48, in <module>
+    lds = random_LDS(d_h, d_in, d_out, device= device, dtype = torch_dtype).to(dtype = torch_dtype, device = device)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/cheby_test/gen_lds.py", line 114, in random_LDS
+    lds = LDS(state_dim=d_h, input_dim=d_u, output_dim=d_o, bsz_dim = 1, dtype=dtype)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/cheby_test/gen_lds.py", line 38, in __init__
+    self.h0 = nn.Parameter(torch.zeros(state_dim, dtype=dtype)).to(device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/.conda/envs/torch-env/lib/python3.12/site-packages/torch/cuda/__init__.py", line 319, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx
+/home/ds6237/.conda/envs/torch-env/lib/python3.12/site-packages/torch/cuda/__init__.py:716: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+Traceback (most recent call last):
+  File "/home/ds6237/cheby_test/train_gen_stu.py", line 48, in <module>
+    lds = random_LDS(d_h, d_in, d_out, device= device, dtype = torch_dtype).to(dtype = torch_dtype, device = device)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/cheby_test/gen_lds.py", line 114, in random_LDS
+    lds = LDS(state_dim=d_h, input_dim=d_u, output_dim=d_o, bsz_dim = 1, dtype=dtype)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/cheby_test/gen_lds.py", line 38, in __init__
+    self.h0 = nn.Parameter(torch.zeros(state_dim, dtype=dtype)).to(device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/.conda/envs/torch-env/lib/python3.12/site-packages/torch/cuda/__init__.py", line 319, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx
+/home/ds6237/.conda/envs/torch-env/lib/python3.12/site-packages/torch/cuda/__init__.py:716: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+Traceback (most recent call last):
+  File "/home/ds6237/cheby_test/train_gen_stu.py", line 48, in <module>
+    lds = random_LDS(d_h, d_in, d_out, device= device, dtype = torch_dtype).to(dtype = torch_dtype, device = device)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/cheby_test/gen_lds.py", line 114, in random_LDS
+    lds = LDS(state_dim=d_h, input_dim=d_u, output_dim=d_o, bsz_dim = 1, dtype=dtype)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/cheby_test/gen_lds.py", line 38, in __init__
+    self.h0 = nn.Parameter(torch.zeros(state_dim, dtype=dtype)).to(device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/.conda/envs/torch-env/lib/python3.12/site-packages/torch/cuda/__init__.py", line 319, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx
+/home/ds6237/.conda/envs/torch-env/lib/python3.12/site-packages/torch/cuda/__init__.py:716: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+Traceback (most recent call last):
+  File "/home/ds6237/cheby_test/train_gen_stu.py", line 48, in <module>
+    lds = random_LDS(d_h, d_in, d_out, device= device, dtype = torch_dtype).to(dtype = torch_dtype, device = device)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/cheby_test/gen_lds.py", line 114, in random_LDS
+    lds = LDS(state_dim=d_h, input_dim=d_u, output_dim=d_o, bsz_dim = 1, dtype=dtype)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/cheby_test/gen_lds.py", line 38, in __init__
+    self.h0 = nn.Parameter(torch.zeros(state_dim, dtype=dtype)).to(device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/.conda/envs/torch-env/lib/python3.12/site-packages/torch/cuda/__init__.py", line 319, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx
+/home/ds6237/.conda/envs/torch-env/lib/python3.12/site-packages/torch/cuda/__init__.py:716: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+Traceback (most recent call last):
+  File "/home/ds6237/cheby_test/train_gen_stu.py", line 48, in <module>
+    lds = random_LDS(d_h, d_in, d_out, device= device, dtype = torch_dtype).to(dtype = torch_dtype, device = device)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/cheby_test/gen_lds.py", line 114, in random_LDS
+    lds = LDS(state_dim=d_h, input_dim=d_u, output_dim=d_o, bsz_dim = 1, dtype=dtype)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/cheby_test/gen_lds.py", line 38, in __init__
+    self.h0 = nn.Parameter(torch.zeros(state_dim, dtype=dtype)).to(device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/.conda/envs/torch-env/lib/python3.12/site-packages/torch/cuda/__init__.py", line 319, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx
+/home/ds6237/.conda/envs/torch-env/lib/python3.12/site-packages/torch/cuda/__init__.py:716: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+Traceback (most recent call last):
+  File "/home/ds6237/cheby_test/train_gen_stu.py", line 48, in <module>
+    lds = random_LDS(d_h, d_in, d_out, device= device, dtype = torch_dtype).to(dtype = torch_dtype, device = device)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/cheby_test/gen_lds.py", line 114, in random_LDS
+    lds = LDS(state_dim=d_h, input_dim=d_u, output_dim=d_o, bsz_dim = 1, dtype=dtype)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/cheby_test/gen_lds.py", line 38, in __init__
+    self.h0 = nn.Parameter(torch.zeros(state_dim, dtype=dtype)).to(device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/.conda/envs/torch-env/lib/python3.12/site-packages/torch/cuda/__init__.py", line 319, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx
+/home/ds6237/.conda/envs/torch-env/lib/python3.12/site-packages/torch/cuda/__init__.py:716: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+Traceback (most recent call last):
+  File "/home/ds6237/cheby_test/train_gen_stu.py", line 48, in <module>
+    lds = random_LDS(d_h, d_in, d_out, device= device, dtype = torch_dtype).to(dtype = torch_dtype, device = device)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/cheby_test/gen_lds.py", line 114, in random_LDS
+    lds = LDS(state_dim=d_h, input_dim=d_u, output_dim=d_o, devivce = device, bsz_dim = 1, dtype=dtype)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/cheby_test/gen_lds.py", line 38, in __init__
+    self.h0 = nn.Parameter(torch.zeros(state_dim, dtype=dtype)).to(device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/.conda/envs/torch-env/lib/python3.12/site-packages/torch/cuda/__init__.py", line 319, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx
+/home/ds6237/.conda/envs/torch-env/lib/python3.12/site-packages/torch/cuda/__init__.py:716: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+Traceback (most recent call last):
+  File "/home/ds6237/cheby_test/train_gen_stu.py", line 48, in <module>
+    lds = random_LDS(d_h, d_in, d_out, device= device, dtype = torch_dtype).to(dtype = torch_dtype, device = device)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/cheby_test/gen_lds.py", line 114, in random_LDS
+    lds = LDS(state_dim=d_h, input_dim=d_u, output_dim=d_o, devivce = device, bsz_dim = 1, dtype=dtype)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: LDS.__init__() got an unexpected keyword argument 'devivce'
+/home/ds6237/.conda/envs/torch-env/lib/python3.12/site-packages/torch/cuda/__init__.py:716: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+Traceback (most recent call last):
+  File "/home/ds6237/cheby_test/train_gen_stu.py", line 48, in <module>
+    lds = random_LDS(d_h, d_in, d_out, device= device, dtype = torch_dtype).to(dtype = torch_dtype, device = device)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/cheby_test/gen_lds.py", line 114, in random_LDS
+    lds = LDS(state_dim=d_h, input_dim=d_u, output_dim=d_o, devivce = device, bsz_dim = 1, dtype=dtype)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: LDS.__init__() got an unexpected keyword argument 'devivce'
+/home/ds6237/.conda/envs/torch-env/lib/python3.12/site-packages/torch/cuda/__init__.py:716: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+Traceback (most recent call last):
+  File "/home/ds6237/cheby_test/train_gen_stu.py", line 48, in <module>
+    lds = random_LDS(d_h, d_in, d_out, device= device, dtype = torch_dtype).to(dtype = torch_dtype, device = device)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/cheby_test/gen_lds.py", line 114, in random_LDS
+    lds = LDS(state_dim=d_h, input_dim=d_u, output_dim=d_o, devivce = device, bsz_dim = 1, dtype=dtype)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: LDS.__init__() got an unexpected keyword argument 'devivce'
+/home/ds6237/.conda/envs/torch-env/lib/python3.12/site-packages/torch/cuda/__init__.py:716: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+Traceback (most recent call last):
+  File "/home/ds6237/cheby_test/train_gen_stu.py", line 48, in <module>
+    lds = random_LDS(d_h, d_in, d_out, device= device, dtype = torch_dtype).to(dtype = torch_dtype, device = device)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/cheby_test/gen_lds.py", line 114, in random_LDS
+    lds = LDS(state_dim=d_h, input_dim=d_u, output_dim=d_o, devivce = device, bsz_dim = 1, dtype=dtype)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: LDS.__init__() got an unexpected keyword argument 'devivce'
+/home/ds6237/.conda/envs/torch-env/lib/python3.12/site-packages/torch/cuda/__init__.py:716: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+Traceback (most recent call last):
+  File "/home/ds6237/cheby_test/train_gen_stu.py", line 48, in <module>
+    lds = random_LDS(d_h, d_in, d_out, device= device, dtype = torch_dtype).to(dtype = torch_dtype, device = device)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/cheby_test/gen_lds.py", line 114, in random_LDS
+    lds = LDS(state_dim=d_h, input_dim=d_u, output_dim=d_o, devivce = device, bsz_dim = 1, dtype=dtype)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: LDS.__init__() got an unexpected keyword argument 'devivce'
+/home/ds6237/.conda/envs/torch-env/lib/python3.12/site-packages/torch/cuda/__init__.py:716: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+Traceback (most recent call last):
+  File "/home/ds6237/cheby_test/train_gen_stu.py", line 48, in <module>
+    lds = random_LDS(d_h, d_in, d_out, device= device, dtype = torch_dtype).to(dtype = torch_dtype, device = device)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ds6237/cheby_test/gen_lds.py", line 114, in random_LDS
+    lds = LDS(state_dim=d_h, input_dim=d_u, output_dim=d_o, device = device, bsz_dim = 1, dtype=dtype)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: LDS.__init__() got an unexpected keyword argument 'devivce'
+/home/ds6237/.conda/envs/torch-env/lib/python3.12/site-packages/torch/cuda/__init__.py:716: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
+/home/ds6237/.conda/envs/torch-env/lib/python3.12/site-packages/torch/cuda/__init__.py:716: UserWarning: Can't initialize NVML
+  warnings.warn("Can't initialize NVML")
