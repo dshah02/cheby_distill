@@ -138,71 +138,10 @@ def conv(
 def flash_conv(
     u: torch.Tensor,
     v: torch.Tensor,
-    flash_fft: FlashFFTConv,
+    flash_fft,
     use_tensordot: bool = True,
 ) -> torch.Tensor:
-    """
-    Flash FFT convolution optimized for polynomial STU.
-
-    Args:
-        u (torch.Tensor): Input tensor of shape `(B, L, d_in)`, where:
-            - `B` is the batch size,
-            - `L` is the sequence length,
-            - `d_in` is the input dimension.
-        v (torch.Tensor): Filter tensor of shape `(K, d_in)`, where:
-            - `K` is the number of filters,
-            - `d_in` is the input dimension.
-        flash_fft (FlashFFTConv): An instance of the FlashFFTConv module, used to perform the convolution.
-        use_tensordot (bool, optional): If `True`, performs the tensordot approximation (default is `True`).
-
-    Returns:
-        torch.Tensor: The convolved output tensor U_plus with shape:
-            - If `use_tensordot=True`: `(B, L, d_in)`
-            - If `use_tensordot=False`: `(B, L, K, d_in)`
-
-    Example:
-        >>> u = torch.randn(4, 16, 32)  # (B, L, d_in)
-        >>> v = torch.randn(8, 32)      # (K, d_in)
-        >>> flash_fft = FlashFFTConv(n=16, dtype=torch.float32)
-        >>> U_plus = flash_conv(u, v, flash_fft, use_tensordot=True)
-        >>> print(U_plus.shape)
-        torch.Size([4, 16, 32])
-    """
-    bsz, seq_len, d_in = u.shape
-    _, K = v.shape
-
-    padded_len = nearest_power_of_two(seq_len, round_up=True)
-    pad_len = padded_len - seq_len
-
-    if use_tensordot:
-        u_padded = (
-            F.pad(u.transpose(1, 2), (0, pad_len)).to(torch.bfloat16).contiguous()
-        )
-        v_padded = F.pad(v.transpose(0, 1), (0, pad_len)).to(torch.float32).contiguous()
-        u_conv = u_padded.reshape(bsz, d_in, padded_len)
-    else:
-        u_k_padded = (
-            F.pad(u.transpose(1, 2), (0, pad_len))
-            .to(torch.bfloat16)
-            .repeat_interleave(K, dim=1)
-            .contiguous()
-        )
-        v_padded = (
-            F.pad(v.transpose(0, 1), (0, pad_len))
-            .to(torch.float32)
-            .repeat(d_in, 1)
-            .contiguous()
-        )
-        u_conv = u_k_padded.reshape(bsz, K * d_in, padded_len)
-
-    U_conv = flash_fft(u_conv, v_padded)[..., :seq_len]
-
-    if use_tensordot:
-        U_plus = U_conv.transpose(1, 2)
-    else:
-        U_plus = U_conv.view(bsz, d_in, K, seq_len).permute(0, 3, 2, 1).contiguous()
-
-    return U_plus
+    return 'Not Implemented'
 
 
 class STU(nn.Module):
@@ -220,7 +159,7 @@ class STU(nn.Module):
         )
         self.register_buffer("p_coeffs", p_coeffs)
         self.flash_fft = (  # TODO: Buggy with torch.compile, need to write a custom op wrapper
-            FlashFFTConv(self.n, dtype=torch.bfloat16)
+            None
             if config.use_flash_fft and flash_fft_available
             else None
         )

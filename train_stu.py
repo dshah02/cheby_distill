@@ -22,7 +22,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # Create a configuration class to store model parameters
 class ModelConfig:
     def __init__(self):
-        self.seq_len = 1024
+        self.seq_len = 128
         self.num_filters = 24
         self.torch_dtype = torch.float32
         self.use_tensordot = False
